@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .truck{
+            left: -100%;
+            position: fixed;
+            bottom: 10px;
+            animation: truckmove 5s infinite;
+        }
+            @keyframes truckmove{
+             0%{
+                left: -100%;
+             }
+             100%{
+                left: 100%;
+             }
+        }
+         .wheel{
+             display: flex;
+             position: absolute;
+             bottom: -10px;
+         }
+        .blue-wheel{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0px 20px;
+            animation: wheelmove 5s infinite;
+        }
+        @keyframes wheelmove{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .white-wheel{
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="truck">
+        <img src="img/truck-1.png" alt="">
+         <div class="wheel">
+            <div class="blue-wheel">
+                <div class="white-wheel"></div>
+            </div>
+            <div class="blue-wheel">
+                <div class="white-wheel"></div>
+            </div>
+         </div>
+    </div>
+</body>
+</html>

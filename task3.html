@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            width: 300px;
+            text-align: center;
+            margin: 10px 0px;
+        }
+        .main{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            animation-name: abc;
+            animation-duration: 3s;
+            animation-fill-mode: both;
+
+        }
+        @keyframes abc{
+            fron{
+                background-color: blue;
+                transform: translate(0px,0px);
+            }
+            to{
+                background-color: brown;
+                transform: translate(200px,0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Practice of animation</h1>
+    <div class="main"></div>
+</body>
+</html>
